@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>心率检测</title>
+</head>
+<body>
+  <h1>心率检测</h1>
+  </br>
+  <p> 这个演示直接在浏览器中运行一个简单的rPPG变体，根据肤色的细微变化来测量心率。</p>
+  <p>为了获得最佳效果，请在光线充足的空间中使用，保持设备以及受试者稳定，减少移动和晃动。</p>
+  <p>其中，BPM为实时心率值，HRV为心率变异性值（通过SDNN计算），上方的波形为rPPG时域信号，下方的波形为rPPG频域信号。</p>
+  </br>
+  <div>
+    <video hidden id="webcam" width="640" height="480"></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
